@@ -5,12 +5,19 @@ import FancyText from "@carefully-coded/react-text-gradient";
 import AnimatedGradientText from "./StyledComponent";
 import Image from "next/image";
 import image2 from "../../assets/images/Mohita_Namjoshi_pic1.jpg"
+import SearchWindow from "./SearchWindow";
+
+import { useAppDispatch, useAppSelector } from "@/redux-store/hooks"; 
+import { toggleSearchWindow } from "@/redux-store/features/searchWindow/searchSlice";
 
 const HeroSection = () => {
+
+   
+
   return (
     <SectionContainer className="flex flex-col justify-center items-center mb-10 lg:mb-24 h-fit">
       <div className="mt-7 lg:mt-20 flex justify-between">
-
+        <SearchWindow />
         {/* ---- Left Div --- */}
         <div className="w-full md:w-[50%] pl-5 lg:pl-0 pt-10">
           <AnimatedGradientText

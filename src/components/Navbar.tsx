@@ -7,7 +7,15 @@ import { MdAccountCircle } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 
+import { useAppDispatch, useAppSelector } from "@/redux-store/hooks"; 
+import { toggleSearchWindow } from "@/redux-store/features/searchWindow/searchSlice";
+
 const Navbar = () => {
+
+  const searchWindow = useAppSelector((state) => state.search);
+  const dispatch = useAppDispatch();
+  
+
   const navItems = [
     { label: "Home", link: "/" },
     { label: "Experience", link: "/experience" },
@@ -17,6 +25,7 @@ const Navbar = () => {
   ];
 
   const [toggleNav, setToggleNav] = useState<boolean>(false);
+
 
   return (
     <div className="h-14 fixed top-10 lg:top-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center items-center backdrop-blur-md border-b border-white/15 md:border-white/20 z-20 bg-white/85 rounded-2xl pl-3 pr-3 w-[95%] lg:w-[98%] text-black">
@@ -38,7 +47,7 @@ const Navbar = () => {
             })}
           </div>
 
-          <div className="hidden lg:block border border-black/50 h-8 rounded-sm ml-2 p-1">
+          <div onClick={()=>{ dispatch(toggleSearchWindow())}} className="hidden lg:block border border-black/50 h-8 rounded-sm ml-2 p-1">
             <form
               action=""
               className="w-full flex justify-center items-center"
@@ -74,7 +83,7 @@ const Navbar = () => {
         </div>}
 
         <div className="lg:hidden cursor-pointer flex items-center">
-          {!toggleNav && <IoSearchSharp className="opacity-20 text-3xl mr-2" />}
+          {!toggleNav && <IoSearchSharp onClick={()=>{ dispatch(toggleSearchWindow())}}className="opacity-20 text-3xl mr-2" />}
           {toggleNav ? 
             <MdClose onClick={()=> setToggleNav((prev)=> !prev)} className="text-3xl" /> : <GiHamburgerMenu onClick={()=> setToggleNav((prev)=> !prev)} className="text-3xl" />
           }
