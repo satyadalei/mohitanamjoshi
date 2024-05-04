@@ -65,3 +65,17 @@ body {
 		background-position: 0% 50%;
 	}
 }
+
+.active-navigation{
+  left: 0;
+  transition: left 0.3s ease-in-out;
+}
+.closed-navigation{
+  left: -120%;
+  transition: left 0.3s ease-in-out;
+}
+
+.list-dash li::before {
+  content: "-";
+  margin-right: 0.5rem; /* Adjust this value as needed */
+}
