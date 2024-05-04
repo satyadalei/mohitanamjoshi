@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionContainer from "../common/SectionContainer";
+import SectionContainer from "../Common/SectionContainer";
 import FancyText from "@carefully-coded/react-text-gradient";
 import AnimatedGradientText from "./StyledComponent";
 import Image from "next/image";
