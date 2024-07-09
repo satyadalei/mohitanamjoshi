@@ -47,22 +47,9 @@ const Navbar = () => {
             })}
           </div>
 
-          <div onClick={()=>{ dispatch(toggleSearchWindow())}} className="hidden lg:block border border-black/50 h-8 rounded-sm ml-2 p-1">
-            <form
-              action=""
-              className="w-full flex justify-center items-center"
+          <div onClick={()=>{ dispatch(toggleSearchWindow())}} className="hidden lg:flex items-center justify-center cursor-pointer h-8 rounded-sm ml-2 p-1"
             >
-              <label htmlFor="Search" className="mr-2">
-                <IoSearchSharp className="opacity-20" />
-              </label>
-              <input
-                autoComplete="off"
-                className="outline-none bg-transparent bg-none text-white/70"
-                type="text"
-                name="search"
-                id=""
-              />
-            </form>
+                <IoSearchSharp className="text-lg " />
           </div>
 
           <div className="flex items-center mr-2 sm:mr-0 mt-5 lg:mt-0">

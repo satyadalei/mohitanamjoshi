@@ -1,5 +1,6 @@
 import Credibility from "@/components/Credibility/Credibility";
 import HeroSection from "@/components/Hero/HeroSection";
+import MusicPlayer from "@/components/MusicPlayer/MusicPlayer";
 
 export default function Home() {
   return (

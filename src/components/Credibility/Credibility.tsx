@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import image1 from "../../assets/images/mohita_namjoshi.webp";
+import image1 from "../assets/images/Mohita_Namjoshi_pic1.jpg";
 import TimeLineBox from "./TimeLineBox";
 
 const Credibility = () => {

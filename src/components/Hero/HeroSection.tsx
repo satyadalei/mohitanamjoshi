@@ -4,7 +4,7 @@ import SectionContainer from "../Common/SectionContainer";
 import FancyText from "@carefully-coded/react-text-gradient";
 import AnimatedGradientText from "./StyledComponent";
 import Image from "next/image";
-import image2 from "../../assets/images/Mohita_Namjoshi_pic1.jpg"
+import image2 from "../assets/images/Mohita_Namjoshi_pic1.jpg"
 import SearchWindow from "./SearchWindow";
 
 
