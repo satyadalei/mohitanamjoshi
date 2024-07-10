@@ -111,6 +111,18 @@ const AudioPlayer = () => {
       songSrc: "./Assets/songs/Hindi Product Explainer.mp3",
       songAvatar: "./Assets/Images/Mohita_Namjoshi_pic1.jpg",
     },
+    {
+      songName: "Maruti Baleno Hindi E-learning",
+      songArtist: "Mohita Namjoshi",
+      songSrc: "./Assets/songs/Maruti Baleno Hindi E-learning.mp3",
+      songAvatar: "./Assets/Images/Mohita_Namjoshi_pic1.jpg",
+    },
+    {
+      songName: "Maruti Baleno Hindi E-learning",
+      songArtist: "Mohita Namjoshi",
+      songSrc: "./Assets/songs/Maruti Baleno Hindi E-learning.mp3",
+      songAvatar: "./Assets/Images/Mohita_Namjoshi_pic1.jpg",
+    },
   ];
 
   return (
