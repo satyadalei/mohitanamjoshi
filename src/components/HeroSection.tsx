@@ -1,30 +1,67 @@
-import React from 'react'
-import Clients from './hero/Clients'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
-const HeroSection = () => {
+// import MusicPlayer from './MusicPlayer';
+import HeroMusicPlayer from './HeroMusicPlayer';
+// import MusicPlayer from './MusicPlayer';
+
+const HeroSection: React.FC = () => {
+   
+
     return (
-        <div className="bg-neutral-900 min-h-screen max-w-7xl pl-5 pr-5 lg:pl-10 lg:pr-10">
-            <div className="grid grid-cols-1 md:grid-cols-2 mx-auto px-4 xl:px-0 pt-24 lg:pt-32">
-                <div>
-                    <h1 className="font-semibold text-white text-5xl md:text-6xl">
-                        <span className="text-[#ff0] inline-block mb-1">Voice Over Artist</span>  <br />
-                    </h1>
-                    <span className='font-semibold text-3xl mt-1' >Friendly, Trustworthy, Credible Voice.</span>
-                    <div className="max-w-4xl">
-                        <p className="mt-5 text-neutral-400 text-lg">
-                            It is a creative hub where imagination meets craftsmanship to transform ideas into tangible realities. At Preline Agency, we specialize in turning conceptual visions into concrete forms, whether it be through design, artistry, or technological innovation.
-                        </p>
+        <div className="bg-white">
+            <section className="bg-[#FCF8F1] bg-opacity-30 py-10">
+                <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+                    <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+                        <div>
+                            <p className="mb-3 text-4xl lg:mt-8 font-semibold tracking-wider text-blue-600 uppercase">
+                                voice Over Artist 
+                            </p>
+                            <p className="text-base font-semibold tracking-wider text-blue-600 uppercase">
+                               Delivering
+                            </p>
+                            <h1 className="mt-5 text-4xl font-bold text-black sm:text-6xl xl:text-7xl">
+                            Friendly, Trustworthy, Credible <span className="m-0 p-0 text-blue-600" >Voice</span>.
+                            </h1>
+                            <HeroMusicPlayer />
+                            <a
+                                href="#"
+                                className="inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400"
+                                role="button"
+                            >
+                                Contact
+                                <svg
+                                    className="w-6 h-6 ml-8 -mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="1.5"
+                                        d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div>
+                            <Image
+                                className="w-full"
+                                src="/Assets/Images/Mohita_Namjoshi_pic1.jpg"
+                                alt="Hero Image"
+                                width={500}
+                                height={350}
+                                priority={true}
+                            />
+                        </div>
                     </div>
                 </div>
-
-                <div className='flex justify-center items-center' >
-                   <Image className='rounded-full' src="/Assets/images/Mohita_Namjoshi_pic1.jpg" alt='Mohita Namjoshi' width={400} height={300} />
-                </div>
-            </div>
-            <Clients />
+            </section>
         </div>
-    )
-}
+    );
+};
 
-export default HeroSection
+export default HeroSection;

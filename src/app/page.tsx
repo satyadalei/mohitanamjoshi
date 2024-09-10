@@ -1,9 +1,12 @@
 import HeroSection from "@/components/HeroSection";
-
+import BasicLayout from "@/components/layouts/BasicLayout";
 export default function Home() {
   return (
     <div>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <BasicLayout>
+        <HeroSection />
+      </BasicLayout>
     </div>
   );
 }
