@@ -69,7 +69,7 @@ const HeroMusicPlayer: React.FC = () => {
 
     return (
         <div className='mt-10'>
-            <div className='w-[100%] max-w-[400px] h-20 relative rounded-full flex overflow-hidden border'>
+            <div className='w-[100%] max-w-[350px] h-16 relative rounded-full flex overflow-hidden border'>
                 <div onClick={togglePlayMusic} className='z-10 absolute top-0 left-0 cursor-pointer bg-sky-500 rounded-full aspect-square h-[100%] flex justify-center items-center'>
                     {isMusicPlaying ?
                         <IoMdPause className='text-4xl text-white' />
@@ -93,8 +93,8 @@ const HeroMusicPlayer: React.FC = () => {
                             </audio>
                             <AudioVisualizer
                                 blob={audioBlob}
-                                width={400}
-                                height={75}
+                                width={350}
+                                height={65}
                                 barWidth={1}
                                 gap={0}
                                 barColor={'#87878768'}
