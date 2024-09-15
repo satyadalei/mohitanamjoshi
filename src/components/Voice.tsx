@@ -8,14 +8,14 @@ const Voice = () => {
     <div>
       <div className="space-y-6 rounded-t-xl border-b border-slate-100 bg-white p-4 pb-6 sm:space-y-8 sm:p-10 sm:pb-8 lg:space-y-6 lg:p-6 xl:space-y-8 xl:p-10 xl:pb-8 dark:border-slate-500 dark:bg-slate-800">
         <div className="flex items-center space-x-4">
-          <img
+          {/* <img
             src="/full-stack-radio.png"
             alt=""
             width="88"
             height="88"
             className="flex-none rounded-lg bg-slate-100"
             loading="lazy"
-          />
+          /> */}
           <div className="min-w-0 flex-auto space-y-1 font-semibold">
             <p className="text-sm leading-6 text-cyan-500 dark:text-cyan-400">
               <abbr title="Episode">Ep.</abbr> 128
