@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import BasicLayout from "@/components/layouts/BasicLayout";
 import Services from "@/components/Services";
 import { RiVoiceprintLine } from "react-icons/ri";
+import MusicPlayer2 from "@/components/MusicPlayer2"
 
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
         </span>
         <Clients />
         <Services />
+        <MusicPlayer2 />
       </BasicLayout>
     </div>
   );
